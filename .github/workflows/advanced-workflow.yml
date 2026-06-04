@@ -29,6 +29,7 @@ jobs:
 
       - name: Zbuduj artefakt
         run: |
+          exit 1
           mkdir -p dist
           echo "App: ${{ env.APP_NAME }}" > dist/build-info.txt
           echo "Version: 1.0.0" >> dist/build-info.txt
